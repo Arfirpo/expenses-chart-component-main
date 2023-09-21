@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- superior resume -->
+      <section class="balance flex-r">
+        <div class="flex-c">
+          <h2 class="balance__title">My balance</h2>
+          <p class="balance__total bold">$921.48</p>
+        </div>
+        <img class="balance__logo" src="./assets/images/logo.svg" alt="balance-logo">
+      </section>
+      <!--charts -->
+      <section class="charts">
+        <h1 class="charts__title bold">Spending - Last 7 days</h1>
+        <ul class="charts__bars-container flex-r">
+        </ul>
+        <div class="charts__analitics flex-r">
+          <div class="analitics__resume flex-c">
+            <p class="resume__title">Total this month</p>
+            <p class="resume__total">$478.33</p>
+          </div>
+          <div class="analitics__comparation flex-c">
+            <p class="comparation__variation">+2.4%</p>
+            <p class="comparation__description">from last month</p>
+          </div>
+        </div>
+      </section>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a target="_blank" href="https://www.frontendmentor.io/profile/Arfirpo">Agustín R. Firpo</a>.
+      </footer>
+    </main>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

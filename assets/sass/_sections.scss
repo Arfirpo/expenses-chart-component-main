@@ -1,0 +1,158 @@
+@use 'variables';
+@use 'flexboxes';
+
+
+.container{
+    width: 344px;
+    margin: 68px auto;
+    padding: 80px 10px;
+    @media (min-width: 600px){
+        width: 540px;
+    }
+}
+.balance{
+    background-color: variables.$softRed;
+    border-radius: 1rem;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px;
+    color: variables.$veryPaleOrange;
+    margin-bottom: 16px;
+    &__title{
+        font-size: 0.7em;
+        font-weight: 400;
+        margin-bottom: 6px;
+    }
+    &__total{
+        font-weight: 700;
+        font-size: 1.4em;
+    }
+    &__logo{
+        width: 60px;
+    }
+    @media (min-width: 600px){
+        height: 126px;
+        &__title{
+            font-size: 1em;
+            margin-bottom: 12px;
+        }
+        &__total{
+            font-size: 1.8em;
+        }
+        &__logo{
+            width: 75px;
+        }
+    }
+}
+.charts{
+    background-color: variables.$veryPaleOrange;
+    padding: 10px 15px;
+    border-radius: 1rem;
+    height: 424px;
+    padding: 28px 20px;
+    color: variables.$mediumBrown;
+    &__title{
+        color: variables.$darkBrown;
+        font-size: 1.25em;
+        margin-bottom: 15px;
+    }
+    &__bars-container{
+        justify-content: space-between;
+        height: 220px;
+        align-items: end;
+        margin-bottom: 30px;
+    }
+    .bars__grafics-chart{
+        background-color: variables.$softRed;
+        width: 32px;
+        height: 200px;
+        border-radius: 4px;
+        position: relative;
+        &:hover{
+            cursor: pointer;
+            filter: brightness(1.2);
+        }
+        .chart__bar--label{
+            display: none;
+            background-color: variables.$darkBrown;
+            width: 38px;
+            color: variables.$veryPaleOrange;
+            padding: 4px;
+            font-size: 0.5em;
+            border-radius: 4px;
+            font-weight: 700;
+            position: absolute;
+            top: -24px;
+            left: -4px;
+            text-align: center;
+        }
+        .chart__bar--day{
+            position: absolute;
+            bottom: -16px;
+            font-size: 0.6em;
+            width: 32px;
+            text-align: center;
+            
+        }
+    }
+    &__analitics{
+        justify-content: space-between;
+        padding: 24px;
+        font-size: .7em;
+        border-top: 2px solid variables.$cream;
+        .resume__title{
+            margin-bottom: 8px;
+        }
+        .resume__total{
+            color: variables.$darkBrown;
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+        .comparation__variation{
+            color: variables.$darkBrown;
+            font-weight: 700;
+            text-align: right;
+            margin-top: 18px;
+        }
+        .comparation__description{
+            margin-top: 4px;
+        }
+
+    }
+    @media (min-width:600px){
+        height: 512px;
+        padding: 44px;
+        &__title{
+            font-size: 2em;
+        }
+        &__bars-container{
+            margin-bottom: 50px;
+        }
+        .bars__grafics-chart{
+            width: 50px;
+            .chart__bar--label{
+                width: 54px;
+                font-size: 0.7em;
+                top: -32px;
+                left: 2px;
+            }
+            .chart__bar--day{
+                width: 54px;
+                bottom: -24px;
+                font-size: 0.8em;
+            }
+        }
+        &__analitics{
+            padding-top: 32px;
+            font-size: .9em;
+            .resume__total{
+                font-size: 2.4em;
+            }
+            .comparation__variation{
+                margin-top: 30px;
+            }
+        }
+    }
+
+}
