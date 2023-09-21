@@ -25,7 +25,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 Users should be able to:
 
 - View the bar chart and hover over the individual bars to see the correct amounts for each day
-![](./screenshot.jpg)
+![BAr Hover & Amount](./assets/images/bar-chart-hover-&-amount.jpg)
 
 - See the current day’s bar highlighted in a different colour to the other bars
 ![](./screenshot.jpg)
